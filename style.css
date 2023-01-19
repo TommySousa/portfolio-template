@@ -91,3 +91,61 @@ nav ul li a:hover::after{
     height: 150px;
     width: 200px;
 }
+
+/* NEW SECTION */
+#about{
+    padding: 100px 0px;
+    color: var(--textColor);
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.left-part{
+    width: 40%;
+}
+
+.left-part img{
+    width: 100%;
+    border-radius: 2%;
+}
+
+.right-part{
+    width: 55% ;
+}
+
+.about-myself{
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+.about-info{
+    display: flex;
+    
+    margin: 20px 0px;
+}
+
+.info{
+    margin: 0 40px 0 0;
+    font-weight: bolder;
+    font-size: 15px;
+    position: relative;
+}
+
+.info::after{
+    content: '';
+    width: 0%; 
+    height: 2px;
+    background: var(--highlightColor);
+    position: absolute;
+    bottom: -10px;
+    left: 0; 
+    transition: 0.4s;
+}
+
+.info:hover::after{
+    width: 100%;
+}
