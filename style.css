@@ -92,7 +92,7 @@ nav ul li a:hover::after{
     width: 200px;
 }
 
-/* NEW SECTION */
+/* THE ABOUT SECTION */
 #about{
     padding: 100px 0px;
     color: var(--textColor);
@@ -133,6 +133,7 @@ nav ul li a:hover::after{
     font-weight: bolder;
     font-size: 15px;
     position: relative;
+    
 }
 
 .info::after{
@@ -149,3 +150,42 @@ nav ul li a:hover::after{
 .info:hover::after{
     width: 100%;
 }
+
+.info.is-active-info::after{
+    width: 50%;
+}
+
+.info-content li{
+    list-style: none;
+    margin: 20px 0px 0px 0px;
+    color: var(--highlightColor);
+    font-weight: bolder;
+    font-size: 0.9em;
+}
+
+.info-content span{
+    font-weight: bold;
+}
+
+.info-content-skills li:first-child{ 
+    color: var(--highlightColor);
+    font-size: 0.9em;
+    font-weight: bolder;
+    list-style: none;
+    margin: 20px 0px 0px 0px;
+}
+
+.info-content-skills li{
+    list-style: none;
+    margin: 5px 0px 0px 0px;
+    font-weight: bold;
+}
+
+.info-content, .info-content-skills{
+    display: none;
+}
+
+.info-content.is-active-content{
+    display: block;
+}
+

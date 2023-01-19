@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Portfolio</title>
+    <script defer src="index.js"></script>
+    <title>Portfolio Template</title>
 </head>
 <body>
     <div id="header" class="background">
@@ -22,7 +23,8 @@
             <div class="background-image"><img src="./assets/Business-Man-PNG-HD-Quality.png" alt=""></div>
             <div class="description-text">
                 <p>Front-End Developer</p>
-                <h1>Hey, I'm Tomás <br>I'm Practicing Front-End</h1>
+                <h1>Hey, I'm XXXXX </h1> 
+                <h1>I'm Practicing Front-End</h1>
             </div>
         </div>
     </div>
@@ -40,10 +42,55 @@
                     </p>
 
                     <div class="about-info">
-                        <p class="info">Formal Education</p>
-                        <p class="info">Certificates</p>
-                        <p class="info">Professional Experience</p>
-                        <p class="info">Skills</p>
+                        <p class="info is-active-info" onclick="show('formalEducation')">Formal Education</p>
+                        <p class="info" onclick="show('certificates')">Certificates</p>
+                        <p class="info" onclick="show('professionalExperience')">Professional Experience</p>
+                        <p class="info" onclick="show('skills')">Skills</p>
+                    </div> 
+                    <div class="info-content is-active-content" id="formalEducation">
+                        <ul>
+                            <li>Bachelor's Degree</li>
+                            <span>Best University | 2020</span>
+
+                            <li>Master's Degree</li>
+                            <span>Even better University | 2022</span>
+
+                            <li>Graduated Highschool</li>
+                            <span>A good school class of 2020</span>
+                        </ul>
+                    </div>
+                    <div class="info-content" id="certificates">
+                        <ul>
+                            <li>WebDev Certificate</li>
+                            <span>UDEMY | 2020</span>
+
+                            <li>Python Bootcamp</li>
+                            <span>Google| 2022</span>
+
+                            <li>Design and Creative Thinking </li>
+                            <span>Given out by someone</span>
+                        </ul>
+                    </div>
+                    <div class="info-content" id="professionalExperience">
+                        <ul>
+                            <li>UX/UI Designer</li>
+                            <span>Some Company | 2020-2021</span>
+
+                            <li>Front-End Engineer</li>
+                            <span>Freelancer | 2021-Current</span>
+                        </ul>
+                    </div>
+                    <div class="info-content-skills" id="skills">
+                        <ul>
+                            <li>Web Development Skills</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>Typescript</li>
+                            <li>NOSQL</li>
+                            <li>SQL</li>
+                            <li>React</li>
+                        </ul>
                     </div>
                 </div>
             </div>
