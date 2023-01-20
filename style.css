@@ -29,20 +29,21 @@ body{
 .background-image{
     height: 785px;
     width:700px;
+    max-width: 50%;
     float: right;
-    overflow: hidden;
-   
+    overflow: hidden; 
 }
 
 .background-image img{
     transform: rotateY(180deg);
-    height: 900px;
-    float: right;
+    height: auto;
+    max-width: 80%;
+    float: right;  
 }
 
 .container{
     padding: 10px 5%;
-}
+}   
 
 nav{
     display: flex;
@@ -96,7 +97,7 @@ nav ul li a:hover::after{
 
 /* THE ABOUT SECTION */
 #about{
-    padding: 100px 0px;
+    padding: 50px 0px;
     color: var(--textColor);
 }
 
@@ -192,10 +193,14 @@ nav ul li a:hover::after{
 
 /* NEW SECTION STYLING PROJECTS */
 
+#project{
+    padding: 25px 0;
+}
+
 .projects-title{
     font-size: 50px;
     font-weight: bolder;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .projects{
@@ -322,4 +327,57 @@ form input, form textarea{
     color: white
 }
 
+@media only screen and (max-width: 1200px){
+    .description-text{
+        font-size: 30px;
+    }
+    
+    .description-text h1{
+        margin-top: 10px;
+    }
+}
 
+@media only screen and (max-width: 992px){
+    .description-text{
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width: 650px){
+    .background-image{
+        max-width: 0%;   
+    }
+    .background{
+        border: 1px solid green;
+        height: 20%;
+    }
+    .description-text{
+        margin-top: 100%;
+        font-size: 20px;
+    }
+    
+    .description-text h1{
+        font-size: 30px;
+    }
+
+    nav ul{
+        background: var(--highlightColor);
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 150px;
+        height: 100vh;
+        padding-top:45px;
+    }
+
+    nav ul li{
+        display: block;
+        font-size: 20px;
+    }
+
+    nav ul li a{
+        color: white;
+        font-weight: bold;
+    }
+
+}
