@@ -15,8 +15,8 @@
                 <img src="./assets/random.svg" class="logo" alt="Random Company Logo">
                 <ul>
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">Projects</a></li>
                     <li><a href="#">About</a></li>
+                    <li><a href="#">Projects</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
             </nav>
@@ -29,6 +29,9 @@
         </div>
     </div>
 
+
+<!--     NEW SECTION  -->
+
     <div id="about">
         <div class="container">
             <div class="row">
@@ -36,16 +39,16 @@
                     <img src="./assets/attractive-businessman-eyeglasses-working-laptop-typing-spending-time-cafe_8353-6244.webp" alt="">
                 </div>
                 <div class="right-part">
-                    <h1 class="about-myself">About Myself</h1>
+                    <h2 class="about-myself">About Myself</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est veritatis autem aperiam, aliquam necessitatibus nostrum, alias quidem culpa provident quod eos ipsa excepturi esse ab quasi, dolorum cum fugit iusto! Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus recusandae corporis provident culpa reprehenderit, 
                         nam quisquam quaerat voluptates voluptatum fugit deleniti temporibus repudiandae numquam? Quasi, debitis. Quas dicta totam minus.
                     </p>
 
                     <div class="about-info">
-                        <p class="info is-active-info" onclick="show('formalEducation')">Formal Education</p>
-                        <p class="info" onclick="show('certificates')">Certificates</p>
-                        <p class="info" onclick="show('professionalExperience')">Professional Experience</p>
-                        <p class="info" onclick="show('skills')">Skills</p>
+                        <p class="info is-active-info" pseudoId="formalEducation">Formal Education</p>
+                        <p class="info" pseudoId="certificates">Certificates</p>
+                        <p class="info" pseudoId="professionalExperience">Professional Experience</p>
+                        <p class="info" pseudoId="skills">Skills</p>
                     </div> 
                     <div class="info-content is-active-content" id="formalEducation">
                         <ul>
@@ -96,5 +99,35 @@
             </div>
         </div>
     </div>
+
+   <!--  NEW SECTION  -->
+    <div id="project">
+        <div class="container">
+            <h2 class="projects-title">Projects</h1>
+                <div class="projects">
+                    <div class="card">
+                        <img src="./assets/laptop.webp" alt="Image of an ilustrated laptop">
+                        <h3 class="card-text">Best food locator</h3>
+                        <p class="card-text">A super cool api build using React Typescript and PostgreSQL</p>
+                        <a class="card-text"href="#">Check out this project</a>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/desktop.webp" alt="Image of an ilustrated laptop">
+                        <h3 class="card-text">Ultra todo list</h3>
+                        <p class="card-text">It's a functional todo list but with a twist. Using webpack javascript and css frameworks</p>
+                        <a class="card-text" href="#">Check out this project</a>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/1565244136.jpg" alt="Image of an ilustrated laptop">
+                        <h3 class="card-text">GPS tracker</h3>
+                        <p class="card-text">Do you ever wondered how your pizza delivery man can get to you in lesse than 30 min?</p>
+                        <a class="card-text" href="#">Check out this project</a>
+                    </div>
+                </div>
+
+        </div>
+    </div>
+
+
 </body>
 </html>
