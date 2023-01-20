@@ -242,7 +242,84 @@ nav ul li a:hover::after{
     text-decoration: underline;
 }
 
+/* NEW SECTION */
 
+.contact-title{
+    font-size: 50px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+    width: 100%;
+}
 
+.contact-me{
+    width: 40%;
+}
+
+.contact-me p{
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.contact-form{
+    width: 50%;
+}
+
+.contact-me i{
+    font-size: 20px;
+    margin-right: 7px;
+}
+
+.socials i{
+    margin-top: 5px;
+    transition: color 0.3s, transform 0.3s;
+    font-size: 30px;
+}
+
+.socials a{
+    text-decoration: none;
+    color: var(--textColor);
+    margin-right: 15px ;
+}
+
+.socials i:hover{
+    color: #425c5a;
+    transform: scale(150%);
+}
+
+.btn{
+    display: inline-block;
+    background-color: transparent;
+    border: 2px solid var(--highlightColor);
+    width: fit-content;
+    cursor: pointer;
+    padding:10px 40px;
+    font-size: 15px;
+    font-weight: bolder;
+    transition: background-color 0.5s, border 0.5s, color 0.5s;
+}
+
+.btn:hover{
+    background-color: var(--highlightColor);
+    border: 2px solid #a2bfbd;
+    color: var(--backgroundColor);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+form input, form textarea{
+    outline: 0;
+    background-color: #a2bfbd;
+    padding: 1em;
+    border: none;
+    font-size: 16px;
+    border-radius: 10px;
+    font-weight: bold;
+    color: white
+}
 
 
