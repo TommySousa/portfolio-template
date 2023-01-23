@@ -1,6 +1,28 @@
 const aboutInfo = document.querySelectorAll('.info');
 const infoContent = document.querySelectorAll('.info-content');
 const infoContentSkills = document.getElementById('skills');
+const hamburger = document.getElementById('hamburger');
+const sideMenu = document.getElementById('side-menu');
+
+const clearBars = () => {
+  hamburger.addEventListener('click', () => {
+    for (let i = 0; i < hamburger.children.length; i++) {
+      hamburger.children[i].classList.toggle('cross');
+      openClose(i);
+    }
+  });
+};
+
+//this function just opens and closes the side menu and changes the position of the cross/hamburger
+const openClose = (i) => {
+  if (hamburger.children[0].classList.value == 'bar1') {
+    sideMenu.style.right = '-200px';
+    hamburger.style.position = '';
+  } else {
+    sideMenu.style.right = 0;
+    hamburger.style.position = 'fixed';
+  }
+};
 
 const addHighlight = () => {
   aboutInfo.forEach((info) => {
@@ -26,3 +48,4 @@ const removeActiveClass = () => {
 };
 
 addHighlight();
+clearBars();

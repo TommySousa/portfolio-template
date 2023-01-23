@@ -7,6 +7,10 @@
     --cardColorHover: #d1d1d1;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 *{
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
@@ -19,6 +23,31 @@ body{
     background-color: var(--backgroundColor);
     color: var(--textColor);
 
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+.bar1, .bar2, .bar3{
+    width: 30px;
+    height: 5px;
+    background-color: black;
+    font-weight: bold;
+    margin: 5px 0;
+    transition: 0.5s;
+}
+
+.bar1.cross  {
+    transform: translate(0, 10px) rotate(-45deg);
+}
+.bar2.cross {
+    opacity: 0;
+}
+
+.bar3.cross  {
+  transform: translate(0, -10px) rotate(45deg);
 }
 
 #header{
@@ -117,7 +146,8 @@ nav ul li a:hover::after{
 }
 
 .right-part{
-    width: 55% ;
+    width: 55%;
+    text-align: justify;
 }
 
 .about-myself{
@@ -128,6 +158,8 @@ nav ul li a:hover::after{
 .about-info{
     display: flex;
     margin: 20px 0px;
+    align-items: center;
+    text-align: center;
 }
 
 .info{
@@ -343,16 +375,31 @@ form input, form textarea{
     }
 }
 
+@media only screen and (max-width: 790px){
+    .description-text{
+        font-size: 25px;
+    }
+    .left-part, .right-part{
+        width: 100%;
+    }
+     
+    .about-myself{
+        margin-top: 30px;
+    }
+}
+
 @media only screen and (max-width: 650px){
     .background-image{
-        max-width: 0%;   
+        max-width: 60%; 
+        position: absolute;
+        max-height: 50%;
+        right: 20px;
+        bottom: -10px;
+        overflow: hidden;
     }
-    .background{
-        border: 1px solid green;
-        height: 20%;
-    }
+
     .description-text{
-        margin-top: 100%;
+        margin-top: 60%;
         font-size: 20px;
     }
     
@@ -360,19 +407,24 @@ form input, form textarea{
         font-size: 30px;
     }
 
+
     nav ul{
         background: var(--highlightColor);
         position: fixed;
         top: 0;
-        right: 0;
         width: 150px;
+        right: -150px;
         height: 100vh;
-        padding-top:45px;
+        padding-top:90px;
+        z-index: 1;
+        transition: right 0.6s;
     }
 
     nav ul li{
         display: block;
         font-size: 20px;
+        margin-top: 40px;
+        margin: 1.5em;
     }
 
     nav ul li a{
@@ -380,4 +432,84 @@ form input, form textarea{
         font-weight: bold;
     }
 
+    .logo{
+        height: 150px;
+        width: 200px;
+        margin-top: 0px;
+        overflow: hidden;
+    }
+
+    .hamburger{
+        position:absolute;
+        display: inline-block;
+        top: 65px;
+        right: 90px;
+        z-index: 2;
+    }
+
+    .about-myself{
+        font-size: 35px;
+        margin: 10px 0px
+    }
+
+    .left-part{
+        width: 100%;
+    }
+    .right-part{
+        width: 100%;
+        text-align: justify;
+        font-size: 15px;
+    }
+
+    .about-info{
+        align-items: center;
+        justify-content: space-between;
+    }
+    .about-info p{
+        font-size: 15px;
+    }
+    
+    .contact-me{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact-title{
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .contact-form{
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .socials{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap:20px
+    }
+
+    .socials a{
+        text-align: center;
+        margin-right: 0px;
+    }
+
+
+    .btn{
+        width: 100%;
+    }
+
+
+    
+
+}
+@media only screen and (max-width: 586px){
+    .background-image{
+        max-width: 0%; 
+    }
 }
