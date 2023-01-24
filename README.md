@@ -3,4 +3,4 @@ This is a portfolio template to practice web design. In this project I will only
 
 The portfolio has 4 sections, the Home, About, Projects and Contact and it's responsive. When the elements on the navbar are pressed the page automatically scrolls to the right section. 
 
-Click here to check the live preview: 
+Click here to check the live preview: https://tommysousa.github.io/portfolio-template/
